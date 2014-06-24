@@ -1,4 +1,0 @@
-INDEX VERSION 1.126+/home/iryna/src/onetouchmessage/.metadata/.plugins/org.eclipse.jdt.core
-2389908815.index
-1270315800.index
-170830145.index
