@@ -5,6 +5,7 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="action_settings">Settings</string>
     <string name="create_message">Create a new message...</string>
-	<string name="select_phone">Select phone numner:</string>
-	
+	<string name="select_phone">Select a phone numner:</string>
+	<string name="select_message">Add your message:</string>
+		
 </resources>

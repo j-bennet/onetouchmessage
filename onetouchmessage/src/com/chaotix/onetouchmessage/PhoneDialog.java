@@ -12,16 +12,24 @@ import android.util.Log;
 
 public class PhoneDialog extends DialogFragment {
 	
-	private Activity activity;
-	private PhoneSelector parent;
 	private static final String tag = "PhoneDialogFragment";
+	private PhoneSelector parent;
 	
 	@Override
+	public void onAttach(Activity activity) {
+		super.onAttach(activity);
+		try {
+			parent = (PhoneSelector) activity;
+		}
+		catch (ClassCastException e) {
+			throw new ClassCastException(activity.toString()
+					+ " must implement PhoneSelector");
+		}
+	}
+
+	@Override
 	public Dialog onCreateDialog(Bundle savedInstanceState) {
-		activity = getActivity();
-		parent = (PhoneSelector) activity;
-		
-	    AlertDialog.Builder builder = new AlertDialog.Builder(activity);
+	    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 	    
 		builder.setTitle(R.string.select_phone).setItems(parent.getAllPhones(),
 				new DialogInterface.OnClickListener() {

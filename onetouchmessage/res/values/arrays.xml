@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="default_messages">
+    <item name="where_are_you">Where are you?</item>
+    <item name="on_my_way">On my way.</item>
+    <item name="be_there_in_5">I\'ll be there in 5 minutes.</item>
+</string-array>    
+</resources>
